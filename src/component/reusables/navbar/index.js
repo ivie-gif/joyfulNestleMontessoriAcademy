@@ -114,6 +114,9 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -169,12 +172,12 @@ const Navbar = () => {
 
             {/* Mobile Toggler */}
             <button
-              className="navbar-toggler py-2 px-3"
+              className="navbar-toggler py-2 px-3 "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarCollapse"
             >
-              <span className="fa fa-bars text-primary"></span>
+              <span className="fa fa-bars text-dark"></span>
             </button>
 
             {/* Navbar Items */}
