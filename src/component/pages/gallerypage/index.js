@@ -3,7 +3,7 @@ import SchoolImages from '../../imagedata';
 
 const SchoolGallery = () => {
   return (
-    <div className="container-fluid schoolImages py-5">
+    <div className="container-fluid schoolImages">
       <div className="container py-5">
         <div
           className="mx-auto text-center wow fadeIn"

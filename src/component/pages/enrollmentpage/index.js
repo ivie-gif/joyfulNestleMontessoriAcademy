@@ -6,7 +6,7 @@ const Enrollment = () => {
 
   return (
     // <Layout>
-    <div className="container-fluid enrollment py-5">
+    <div className="container-fluid enrollment">
       <div className="container py-5">
         <div
           className="mx-auto text-center wow fadeIn"
