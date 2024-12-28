@@ -69,14 +69,13 @@ const Enrollment = () => {
             <div className="enrollment-content-inner">
               <div className="p-4">
                 <i
-                  className={`${enrollment.icon} fa-2x`}
-                  style={{ color: '#86A788' }}
+                  className={`${enrollment.icon} fa-2x text-dark`}
                 ></i>
               </div>
-              <a className="h6" style={{ color: '#86A788' }}>
+              <a className="h6 text-dark">
                 {enrollment.title}
               </a>
-              <p className="my-3" style={{ color: '#86A788' }}>
+              <p className="my-3 text-dark">
                 {enrollment.description}
               </p>
             </div>

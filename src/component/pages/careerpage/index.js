@@ -7,7 +7,7 @@ const ContactUs = () => {
    <Layout>
       <div
         className="container-fluid career-page py-5"
-        style={{ marginTop: "50px" }}
+        style={{  backgroundColor: '#FFFFFF' }}
       >
         <div className="container py-5">
           <div className="p-5 rounded">
@@ -34,7 +34,7 @@ const ContactUs = () => {
             <p>Qualified Montessori Class Assistant</p>
             <p>Qualified Class Teachers</p>
             <p>Crèche Minders</p>
-            <p>Apply by sending your CV to <span className="text-danger">info@joyfulnestle.com</span></p>
+            <p>Apply by sending your CV to <span className="text-danger">JoyfulNestle@gmail.com</span></p>
           </div>
         </div>
       </div>

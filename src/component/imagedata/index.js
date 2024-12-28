@@ -16,7 +16,8 @@ import image15 from '../../assets/schoolGallery/thumbs_177-15.jpg';
 import image16 from '../../assets/schoolGallery/thumbs_177-16.jpg';
 import image17 from '../../assets/schoolGallery/thumbs_177-17.jpg';
 
-const SchoolImages  = [
+
+export const SchoolImages  = [
   {
     id: 1,
     imgSrc: image1,
@@ -104,4 +105,6 @@ const SchoolImages  = [
   },
 ];
 
-export default SchoolImages;
+
+
+export default SchoolImages

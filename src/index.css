@@ -130,13 +130,13 @@ h6,
 }
 
 .get-started-btn {
-  background-color: #86A788;
-  color: #FFFDEC;
+  background-color: #fdc735;
+  color: #000000;
 }
 
 .get-started-btn:hover {
-background-color: #FFFDEC;
-color: #86A788;
+background-color: #00DAF7;
+color: #000000;
 }
 
 .btn-border-radius {
@@ -153,33 +153,6 @@ color: #86A788;
 /*** Button End ***/
 
 /* Navbar Fixed */
-/* .navbar-container {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.navbar-container.scrolled {
-  background-color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-container.scrolled .navbar-nav .nav-link {
-  color: #86A788; 
-}
-
-.navbar-container.scrolled .navbar-brand {
-color: #86A788;
-}
-
-.navbar-container.navbar-container.scrolled .nav-details {
-  color: #86A788
-} */
-
-
-
 .navbar-container {
   position: fixed;
   top: 0;
@@ -195,27 +168,27 @@ color: #86A788;
 }
 
 .navbar-container .navbar-brand h6 {
-  color: #FFFDEC; /* Default color */
+  color: #00DAF7; /* Default color */
 }
 
 .navbar-container.scrolled .navbar-brand h6 {
-  color: #86A788; /* Green color when scrolled */
+  color: #000000; /* Green color when scrolled */
 }
 
 .navbar-container .navbar-nav .nav-link {
-  color: #FFFDEC; /* Default color */
+  color: #00DAF7; /* Default color */
 }
 
 .navbar-container.scrolled .navbar-nav .nav-link {
-  color: #86A788; /* Green color when scrolled */
+  color: #000000; /* Green color when scrolled */
 }
 
 .navbar-container .nav-details span {
-  color: #FFFDEC; /* Default color */
+  color: #00DAF7; /* Default color */
 }
 
 .navbar-container.scrolled .nav-details span {
-  color: #86A788; /* Green color when scrolled */
+  color: #000000; /* Green color when scrolled */
 }
 
 
@@ -259,14 +232,14 @@ color: #86A788;
   font-size: 16px;
   font-weight: 600;
   transition: .5s;
-  color: #FFFDEC;
+  color: #00DAF7;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
-  color: #ff4880;
+  color: #fdc735;
   cursor: pointer;
 }
 
@@ -316,7 +289,7 @@ color: #86A788;
 
 
 .contact-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url('/public/img/playimg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.08)), url('/public/img/6.jpeg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,16 +324,6 @@ color: #86A788;
 
 
 /*** Hero Header ***/
-.hero-header,
-.page-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/public/img/playimg.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*** Hero Header ***/
-
-
 /*** About Start ***/
 .video {
   position: relative;
@@ -484,7 +447,7 @@ color: #86A788;
 }
 
 .about {
-  background: linear-gradient(rgba(255,253,236, 0.8), rgba(255,253,236, 0.8)), url('/public/img/penstack.jpg');
+  background: linear-gradient(rgba(253, 199, 53, 0.8), rgba(253, 199, 53, 0.8)), url('/public/img/penstack.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -668,7 +631,7 @@ color: #86A788;
 
 /*** Blog Start ***/
 .blog {
-  background: linear-gradient(rgb(255, 253, 236, 0.8), rgb(255, 253, 236, 0.8))
+  background-color: #FFFFFF;
 }
 
 .blog .blog-item .blog-img::after {
@@ -716,6 +679,16 @@ color: #86A788;
 
 
 /*** schoolImages Start ***/
+.more-gallery-btn {
+  background-color:  #00DAF7;
+  color: #000000;
+}
+
+.more-gallery-btn:hover {
+  background-color: #fdc735;
+  color: #000000;
+}
+
 .schoolImages .schoolImages-item {
   position: relative;
   width: 100%;
@@ -761,7 +734,7 @@ color: #86A788;
 
 /*** testimonial Start ***/
 .testimonial {
-  background: url('/public/img/placeholder.gif');
+  background: linear-gradient(rgba(253, 199, 53, 0.5), rgba(253, 199, 53, 0.5)), url('/public/img/placeholder.gif');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -800,7 +773,7 @@ color: #86A788;
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgb(255, 253, 236, 0.7), rgb(255, 253, 236, 0.7)), url("/public/img/placeholder.gif");
+    background: linear-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.7)), url("/public/img/placeholder.gif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

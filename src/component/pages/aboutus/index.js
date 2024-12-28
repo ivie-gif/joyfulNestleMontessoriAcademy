@@ -7,18 +7,9 @@ const Aboutus = () => {
     <div className="container-fluid py-5 about bg-light">
       <div className="container py-5">
         <div className="row g-5 align-items-center">
-          {/* Video Section */}
+          {/* Image Section */}
           <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="video border">
-              {/* <button
-               type="button"
-               className="btn btn-play"
-               data-bs-toggle="modal"
-               data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-               data-bs-target="#videoModal"
-             >
-               <span></span>
-             </button> */}
             </div>
           </div>
 
@@ -26,7 +17,6 @@ const Aboutus = () => {
           <div className="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
             <h4
               className=" mb-4 d-inline-block text-dark text-uppercase p-2 title-border-radius"
-              // style={{ color: "#86A788", borderBottom: "2px solid #86A788" }}
               style={{ borderBottom: "2px solid #000000" }}
             >
               Welcome to our School
@@ -37,10 +27,10 @@ const Aboutus = () => {
             </h1>
             <p className="text-dark mb-4 text-start">
               At <span className="fw-bold">JoyfulNestle </span>{" "}
-              <span className="fw-bold" style={{ color: "#ff4880" }}>
+              <span className="fw-bold" style={{ color: "#FFFFFF" }}>
                 Montessori{" "}
               </span>{" "}
-              <span className="fw-bold" style={{ color: "#86A788" }}>
+              <span className="fw-bold" style={{ color: "#00f5f9" }}>
                 Academy
               </span>
               , the importance of learning is
@@ -74,21 +64,21 @@ const Aboutus = () => {
                 <h6 class="mb-3">
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9"}}
                   ></i>
                   Sports Activites
                 </h6>
                 <h6 class="mb-3">
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9" }}
                   ></i>
                   Outdoor Games
                 </h6>
                 <h6>
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9" }}
                   ></i>
                   Arts and Crafts
                 </h6>
@@ -97,21 +87,21 @@ const Aboutus = () => {
                 <h6 class="mb-3">
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9" }}
                   ></i>
                   Highly Secured Environment
                 </h6>
                 <h6 class="mb-3">
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9" }}
                   ></i>
                   Qualified & Caring Teachers
                 </h6>
                 <h6>
                   <i
                     class="fas fa-check-circle me-2"
-                    style={{ color: "#86A788" }}
+                    style={{ color: "#00f5f9" }}
                   ></i>
                   Holistic Learning Approach
                 </h6>

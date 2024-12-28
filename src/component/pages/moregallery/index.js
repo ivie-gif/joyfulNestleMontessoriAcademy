@@ -1,6 +1,5 @@
 import React from 'react';
-import SchoolImages from '../../imagedata';
-import { Link } from 'react-router-dom';
+import MoreSchoolImages from '../../imagedata/moreImgData';
 
 const SchoolGallery = () => {
   return (
@@ -17,7 +16,7 @@ const SchoolGallery = () => {
           <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase"> Some of the events from Awesome Summer camp 2017</h1>
         </div>
         <div className="row g-2 justify-content-center">
-          {SchoolImages.map((image) => (
+          {MoreSchoolImages.map((image) => (
             <div
               key={image.id}
               className="col-md-6 col-lg-4 col-xl-3 wow fadeIn"
@@ -27,20 +26,11 @@ const SchoolGallery = () => {
                 <img
                   src={image.imgSrc}
                   className="img-fluid w-100"
-                  alt={`schoolImages ${image.id}`}
+                  alt=""
                 />
               </div>
             </div>
           ))}
-        </div>
-        {/* More Details Button */}
-        <div className='text-center'>
-            <Link
-              to="/moregallery"
-              className="btn px-5 more-gallery-btn py-3 mt-5 btn-border-radius text-center"
-            >
-              More Gallery
-              </Link>
         </div>
       </div>
     </div>

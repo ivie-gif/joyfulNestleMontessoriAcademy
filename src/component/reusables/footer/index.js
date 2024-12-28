@@ -1,4 +1,5 @@
 import React from "react";
+import FooterGallery from "../../imagedata/footerGallery";
 
 const Footer = () => {
   return (
@@ -25,16 +26,13 @@ const Footer = () => {
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="footer-item">
                 <div
-                  className="d-flex flex-column p-4 ps-5 text-dark"
-                  style={{ borderRadius: "50% 20% / 10% 40%", border: '1px solid #000000' }}
+                  className="d-flex flex-column text-dark"
+                  style={{ borderRadius: "50% 20% / 10% 40%"}}
                 >
-                  <p>Monday: 8am to 5pm</p>
-                  <p>Tuesday: 8am to 5pm</p>
-                  <p>Wednesday: 8am to 5pm</p>
-                  <p>Thursday: 8am to 5pm</p>
-                  <p>Friday: 8am to 5pm</p>
-                  <p>Saturday: 8am to 5pm</p>
-                  <p className="mb-0">Sunday: Closed</p>
+                   <h4 className="mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{ borderBottom: '2px solid #000000'}}>
+                   Contact Hours
+                </h4>
+                  <p>Mondays to Fridays</p> <p>7:30am - 6pm</p>
                 </div>
               </div>
             </div>
@@ -53,7 +51,7 @@ const Footer = () => {
                     <i className="fa fa-phone-alt me-2 text-dark"></i> +2348032018658, +2348066388585
                   </span>
                   <span href="#" className="text-start rounded-0 text-body mb-4">
-                    <i className="fas fa-envelope me-2 text-dark"></i> info@joyfulnestle.com
+                    <i className="fas fa-envelope me-2 text-dark"></i> JoyfulNestle@gmail.com
                   </span>
                   <span href="#" className="text-start rounded-0 text-body mb-4">
                     <i className="fa fa-clock me-2 text-dark"></i> 26/7 Hours Service
@@ -69,13 +67,13 @@ const Footer = () => {
                   OUR GALLERY
                 </h4>
                 <div className="row g-3">
-                  {[1, 2, 3, 4, 5, 6].map((num) => (
-                    <div className="col-4" key={num}>
+                  {FooterGallery.map((image) => (
+                    <div className="col-4" key={image}>
                       <div className="footer-galary-img rounded-circle" style={{ border: '2px solid #000000'}}>
                         <img
-                          src={`img/galary-${num}.jpg`}
+                          src={image.imgSrc}
                           className="img-fluid rounded-circle p-2"
-                          alt={`Gallery ${num}`}
+                          alt={`Gallery ${image}`}
                         />
                       </div>
                     </div>
@@ -88,12 +86,12 @@ const Footer = () => {
       </div>
 
       {/* Copyright Start */}
-      <div className="container-fluid copyright py-4" style={{ backgroundColor: '#86A788' }}>
+      <div className="container-fluid copyright py-4" style={{ backgroundColor: '#fdc735' }}>
   <div className="container">
     <div className="row justify-content-between align-items-center">
       <div className="col-md-6 d-flex align-items-center">
         <i className="fas fa-copyright text-light me-2"></i>
-        <span style={{color: '#FFFDFD'}}>JoyfulNestle Montessori Academy, All rights reserved.</span>
+        <span className="text-dark">JoyfulNestle Montessori Academy, All rights reserved.</span>
       </div>
     </div>
   </div>
@@ -102,8 +100,8 @@ const Footer = () => {
       {/* Copyright End */}
 
       {/* Back to Top */}
-      <a href="#" className="btn border-3 rounded-circle back-to-top" style={{color: '#ff4880', backgroundColor: '#ff4880'}}>
-        <i className="fa fa-arrow-up text-white"></i>
+      <a href="#" className="btn border-3 rounded-circle back-to-top" style={{color: '#fdc735', backgroundColor: '#00DAF7'}}>
+        <i className="fa fa-arrow-up text-dark"></i>
       </a>
     </>
   );

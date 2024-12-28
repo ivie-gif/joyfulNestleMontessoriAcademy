@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BlogPosts from '../../blogdata';
 import { Link } from 'react-router-dom';
 
 const BlogSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="container-fluid blog py-5">
@@ -12,7 +15,7 @@ const BlogSection = () => {
           data-wow-delay="0.1s"
           style={{ maxWidth: '600px' }}
         >
-          <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #000000'}}>
+          <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #0000000'}}>
             Latest News & Blog
           </h4>
           <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase" >Read Our Latest News & Blog</h1>
@@ -32,35 +35,35 @@ const BlogSection = () => {
                     alt="Blog post"
                   />
                 </div>
-                <div className="d-flex justify-content-between px-4 py-3 blog-date-comments" style={{borderBottom: '1px solid #FFFDEC', backgroundColor: '#86A788'}}>
-                  <small style={{color: '#FFFDEC'}}>
-                    <i className="fas fa-calendar me-1" style={{color: '#FFFDEC'}}></i> {post.date}
+                <div className="d-flex justify-content-between px-4 py-3 blog-date-comments" style={{borderBottom: '1px solid #000000', backgroundColor: '#00ecf4'}}>
+                  <small style={{color: '#000000'}}>
+                    <i className="fas fa-calendar me-1" style={{color: '#000000'}}></i> {post.date}
                   </small>
                 </div>
-                <div className="blog-content d-flex align-items-center px-4 py-3" style={{backgroundColor: '#86A788'}}>
-                  <div className="overflow-hidden rounded-circle rounded-top" style={{color: '#FFFDEC', border: '1px solid #FFFDEC'}}>
-                    <i className="fas fa-user fs-1 rounded-circle p-2 rounded-top" 
+                <div className="blog-content d-flex align-items-center px-4 py-3" style={{backgroundColor: '#00ecf4'}}>
+                  <div className="overflow-hidden rounded-circle rounded-top" style={{color: '#0000000', border: '1px solid #000000'}}>
+                    <i className="fas fa-user fs-1 rounded-circle text-center p-2 rounded-top" 
                     style={{width: '70px',
                         height: '70px',
                         borderStyle: 'dotted',
-                        borderColor: '#FFFDEC',
-                        color: '#FFFDEC'}}></i>
+                        borderColor: '#000000',
+                        color: '#000000'}}></i>
                   </div>
                   <div className="ms-3">
-                    <h6  style={{color: '#FFFDEC'}}>{post.authorName}</h6>
+                    <h6  style={{color: '#000000'}}>{post.authorName}</h6>
                   </div>
                 </div>
-                <div className="px-4 pb-4 rounded-bottom" style={{backgroundColor: '#86A788', color: '#FFFDEC'}}>
+                <div className="px-4 pb-4 rounded-bottom" style={{backgroundColor: '#00ecf4', color: '#000000'}}>
                   <div className="blog-text-inner">
                     <a href="#" className="h4" >
                       {post.title}
                     </a>
-                    <p className="mt-3 mb-4" style={{color: '#FFFDEC'}}>{post.description}</p>
+                    <p className="mt-3 mb-4" style={{color: '#000000'}}>{post.description}</p>
                   </div>
                   <div className="text-center">
                      <Link to={`/blog/${post.slug}`}>
                   <button className="btn px-4 py-2 mb-3 btn-border-radius" 
-                      style={{backgroundColor: '#FFFDEC', color: '#86A788'}}>View Details</button>
+                      style={{backgroundColor: '#fdc735', color: '#000000'}}>View Details</button>
                 </Link>
                   </div>
                 </div>
