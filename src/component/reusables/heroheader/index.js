@@ -103,7 +103,7 @@ const HeroHeader = () => {
                     style={{
                       color: "#fdc735",
                       fontWeight: "100",
-                      marginTop: "130px",
+                      marginTop: "100px",
                     }}
                   >
                     We Care For Your Child
