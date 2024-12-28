@@ -15,10 +15,10 @@ const BlogSection = () => {
           data-wow-delay="0.1s"
           style={{ maxWidth: '600px' }}
         >
-          <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #0000000'}}>
-            Latest News & Blog
+          <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #000000'}}>
+            Latest News And Blogs
           </h4>
-          <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase" >Read Our Latest News & Blog</h1>
+          <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase" >Read Our Latest News And Blogs</h1>
         </div>
         <div className="row g-5 justify-content-center">
           {BlogPosts.map((post, index) => (
@@ -41,7 +41,7 @@ const BlogSection = () => {
                   </small>
                 </div>
                 <div className="blog-content d-flex align-items-center px-4 py-3" style={{backgroundColor: '#00ecf4'}}>
-                  <div className="overflow-hidden rounded-circle rounded-top" style={{color: '#0000000', border: '1px solid #000000'}}>
+                  <div className="overflow-hidden rounded-circle rounded-top" style={{color: '#000000', border: '1px solid #000000'}}>
                     <i className="fas fa-user fs-1 rounded-circle text-center p-2 rounded-top" 
                     style={{width: '70px',
                         height: '70px',
@@ -62,7 +62,7 @@ const BlogSection = () => {
                   </div>
                   <div className="text-center">
                      <Link to={`/blog/${post.slug}`}>
-                  <button className="btn px-4 py-2 mb-3 btn-border-radius" 
+                  <button className="btn px-4 py-2 mb-3 btn-border-radius text-uppercase" 
                       style={{backgroundColor: '#fdc735', color: '#000000'}}>View Details</button>
                 </Link>
                   </div>

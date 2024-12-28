@@ -118,7 +118,7 @@ const HeroHeader = () => {
                     <RouterLink
                       to=""
                       id='enrollment'
-                      className="btn get-started-btn px-4 py-3 px-md-5 me-4 btn-border-radius"
+                      className="btn get-started-btn text-uppercase px-4 py-3 px-md-5 me-4 btn-border-radius"
                     >
                       Get Started
                     </RouterLink>

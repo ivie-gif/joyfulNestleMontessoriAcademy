@@ -37,9 +37,9 @@ const SchoolGallery = () => {
         <div className='text-center'>
             <Link
               to="/moregallery"
-              className="btn px-5 more-gallery-btn py-3 mt-5 btn-border-radius text-center"
+              className="btn px-5 more-gallery-btn py-3 mt-5 btn-border-radius text-center text-uppercase"
             >
-              More Gallery
+              More Galleries
               </Link>
         </div>
       </div>

@@ -53,9 +53,6 @@ const Footer = () => {
                   <span href="#" className="text-start rounded-0 text-body mb-4">
                     <i className="fas fa-envelope me-2 text-dark"></i> JoyfulNestle@gmail.com
                   </span>
-                  <span href="#" className="text-start rounded-0 text-body mb-4">
-                    <i className="fa fa-clock me-2 text-dark"></i> 26/7 Hours Service
-                  </span>
                 </div>
               </div>
             </div>
