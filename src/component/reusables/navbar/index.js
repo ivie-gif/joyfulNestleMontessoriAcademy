@@ -77,11 +77,19 @@ const Navbar = () => {
                 Expressway Ogun State Nigeria
               </p>
             </small>
-            <small className="me-3 d-flex align-items-center">
+            <small className="me-3 d-flex align-items-center border-start border-end border-dark px-3 type-5">
               <i
                 className="fas fa-envelope me-2 text-dark"
               ></i>
               <p className="text-dark mb-0">JoyfulNestle@gmail.com</p>
+            </small>
+            <small className="me-3 d-flex align-items-center">
+              <a href="https://www.facebook.com/share/p/1DPYHkkpuS/?mibextid=wwXIfr" target="_blank">
+            <i class="fab fa-brands me-2 text-dark fa-facebook-f px-2"></i>
+              </a>
+              <a href="https://www.instagram.com/joyfulnestle?igsh=MmRqZ3FjdDZ5aHhs" target="_blank">
+              <i className="fab fa-instagram me-2 text-dark"></i>
+              </a>
             </small>
           </div>
         </div>

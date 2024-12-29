@@ -1,19 +1,21 @@
 import React from 'react';
 import MoreSchoolImages from '../../imagedata/moreImgData';
+import Layout from '../../layout';
 
 const SchoolGallery = () => {
   return (
+    <Layout>
     <div className="container-fluid schoolImages">
       <div className="container py-5">
         <div
           className="mx-auto text-center wow fadeIn"
           data-wow-delay="0.1s"
-          style={{ maxWidth: '600px' }}
+          style={{ maxWidth: '600px', marginTop: '80px' }}
         >
           <h4 className="mb-4 d-inline-block p-2 title-border-radius"  style={{ borderBottom: '2px solid #000000'}}>
             TAKE A SCHOOL TOUR
           </h4>
-          <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase"> Some of the events from Awesome Summer camp 2017</h1>
+          <h1 className=" mb-5 display-6 fs-6 text-dark text-uppercase"> Here are some highlights from our Awesome Summer Camp 2017, a glimpse of one of our vibrant classrooms, and the fun-filled Christmas Outdoor Party</h1>
         </div>
         <div className="row g-2 justify-content-center">
           {MoreSchoolImages.map((image) => (
@@ -34,6 +36,7 @@ const SchoolGallery = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 };
 

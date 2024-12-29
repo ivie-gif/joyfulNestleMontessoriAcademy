@@ -1,27 +1,3 @@
-// import React from "react";
-// import Layout from "../../layout";
-// import Aboutus from "../aboutus";
-// import Enrollment from "../enrollmentpage";
-// import SchoolGallery from "../gallerypage";
-// import BlogSection from "../blogpage";
-// import Contact from "../contactpage";
-
-
-// const HomePage = () => {
-//   return (
-//     <Layout>
-//     <Aboutus />
-//     <Enrollment />
-//     <SchoolGallery />
-//     <BlogSection />
-//     <Contact />
-//     </Layout>
-//   );
-// };
-
-// export default HomePage;
-
-
 import React from "react";
 import Layout from "../../layout";
 import HeroHeader from "../../reusables/heroheader";
