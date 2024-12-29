@@ -17,7 +17,7 @@ const Navbar = () => {
     window.addEventListener("resize", checkMobileView);
 
     return () => {
-      window.removeEventListener("resize", checkMobileView); 
+      window.removeEventListener("resize", checkMobileView);
     };
   }, []);
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   const closeNavbar = () => {
     setNavbarOpen(false);
-    document.body.style.overflow = "auto"; // Re-enable scroll when menu item clicked
+    document.body.style.overflow = "auto"; 
   };
 
   // Handle scrolling
@@ -60,35 +60,41 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar-container ${scrolled ? "scrolled" : ""}`} >
-      <div className=" wow fadeIn" data-wow-delay="0.1s">
-        {/* Topbar */}
+    <div className={`navbar-container ${scrolled ? "scrolled" : ""}`}>
+      <div className="wow fadeIn" data-wow-delay="0.1s">
+        {/* Topbar - Always visible on mobile as well */}
         <div
-          className="topbar d-none d-lg-block py-2 px-5"
+          className="topbar py-2 px-2"
           style={{ borderRadius: "0 40px", backgroundColor: "#00f5f9" }}
         >
-          <div className="top-info d-flex align-items-center">
-            <small className="me-3 d-flex align-items-center">
-              <i
-                className="fas fa-map-marker-alt me-2 text-dark"
-              ></i>
-              <p className="text-dark mb-0">
+          <div className="top-info">
+            {/* Address */}
+            <small className=" d-inline-flex flex-row flex-sm-row align-items-center border-end border-dark px-2 w-lg-auto">
+              <i className="fas fa-map-marker-alt me-2 text-dark"></i>
+              <p className="text-dark mb-0 w-sm-100">
                 Plot 2B, Ekpo Michael Street, VOERA Estate, Arepo - Lagos-Ibadan
                 Expressway Ogun State Nigeria
               </p>
             </small>
-            <small className="me-3 d-flex align-items-center border-start border-end border-dark px-3 type-5">
-              <i
-                className="fas fa-envelope me-2 text-dark"
-              ></i>
+
+            {/* Email */}
+            <small className="d-inline-flex flex-row flex-sm-row align-items-center border-end border-0-sm border-dark px-2 ">
+              <i className="fas fa-envelope me-2 text-dark"></i>
               <p className="text-dark mb-0">JoyfulNestle@gmail.com</p>
             </small>
-            <small className="me-3 d-flex align-items-center">
-              <a href="https://www.facebook.com/share/p/1DPYHkkpuS/?mibextid=wwXIfr" target="_blank">
-            <i class="fab fa-brands me-2 text-dark fa-facebook-f px-2"></i>
+            {/* Social Media */}
+            <small className=" d-inline-flex flex-row flex-sm-row align-items-center">
+              <a
+                href="https://www.facebook.com/share/p/1DPYHkkpuS/?mibextid=wwXIfr"
+                target="_blank"
+              >
+                <i className="fab fa-brands me-2 text-dark fa-facebook-f px-2"></i>
               </a>
-              <a href="https://www.instagram.com/joyfulnestle?igsh=MmRqZ3FjdDZ5aHhs" target="_blank">
-              <i className="fab fa-instagram me-2 text-dark"></i>
+              <a
+                href="https://www.instagram.com/joyfulnestle?igsh=MmRqZ3FjdDZ5aHhs"
+                target="_blank"
+              >
+                <i className="fab fa-instagram me-2 text-dark"></i>
               </a>
             </small>
           </div>
@@ -106,27 +112,35 @@ const Navbar = () => {
             </RouterLink>
 
             {/* Mobile Toggler */}
-
             <button
               className="navbar-toggler px-2"
               type="button"
               onClick={handleNavbarToggle} // Toggle navbar open/close
               aria-controls="navbarCollapse"
-              aria-expanded={navbarOpen ? 'true' : 'false'}
+              aria-expanded={navbarOpen ? "true" : "false"}
               aria-label="Toggle navigation"
             >
-              <span className="fa fa-bars p-2" style={{ color: "#00f5f9" }}></span>
+              <span
+                className="fa fa-bars p-2"
+                style={{ color: "#00f5f9" }}
+              ></span>
             </button>
 
             {/* Navbar Items */}
             <div
               className={`collapse navbar-collapse ${navbarOpen ? "show" : ""}`}
-              id="navbarCollapse" style={{
-                backgroundColor: navbarOpen && isMobile ? "#FFFFFF" : "transparent",
+              id="navbarCollapse"
+              style={{
+                backgroundColor:
+                  navbarOpen && isMobile ? "#FFFFFF" : "transparent",
               }}
             >
               <div className="navbar-nav mx-auto">
-                <RouterLink to="/" className="nav-item nav-link" onClick={closeNavbar}>
+                <RouterLink
+                  to="/"
+                  className="nav-item nav-link"
+                  onClick={closeNavbar}
+                >
                   Home
                 </RouterLink>
                 <ScrollLink
@@ -134,7 +148,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={100}
                   offset={-80}
-                  className="nav-item nav-link" 
+                  className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   About
@@ -144,7 +158,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={100}
                   offset={-80}
-                  className="nav-item nav-link" 
+                  className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Enrollment
@@ -154,7 +168,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={100}
                   offset={-80}
-                  className="nav-item nav-link" 
+                  className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Gallery
@@ -164,7 +178,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={100}
                   offset={-80}
-                  className="nav-item nav-link" 
+                  className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Testimonial
@@ -174,15 +188,23 @@ const Navbar = () => {
                   smooth={true}
                   duration={100}
                   offset={-80}
-                  className="nav-item nav-link" 
+                  className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Blogs
                 </ScrollLink>
-                <RouterLink to="/career" className="nav-item nav-link" onClick={closeNavbar}>
+                <RouterLink
+                  to="/career"
+                  className="nav-item nav-link"
+                  onClick={closeNavbar}
+                >
                   Career
                 </RouterLink>
-                <RouterLink to="/contact" className="nav-item nav-link" onClick={closeNavbar}>
+                <RouterLink
+                  to="/contact"
+                  className="nav-item nav-link"
+                  onClick={closeNavbar}
+                >
                   Contact
                 </RouterLink>
               </div>

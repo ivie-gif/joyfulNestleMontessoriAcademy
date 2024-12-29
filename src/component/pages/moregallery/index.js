@@ -10,7 +10,7 @@ const SchoolGallery = () => {
         <div
           className="mx-auto text-center wow fadeIn"
           data-wow-delay="0.1s"
-          style={{ maxWidth: '600px', marginTop: '80px' }}
+          style={{ maxWidth: '600px', marginTop: '90px' }}
         >
           <h4 className="mb-4 d-inline-block p-2 title-border-radius"  style={{ borderBottom: '2px solid #000000'}}>
             TAKE A SCHOOL TOUR
@@ -24,7 +24,7 @@ const SchoolGallery = () => {
               className="col-md-6 col-lg-4 col-xl-3 wow fadeIn"
               data-wow-delay={image.delay}
             >
-              <div className="schoolImages-item border overflow-hidden" style={{borderRadius: '10px'}}>
+              <div className="schoolImages-item overflow-hidden" style={{borderRadius: '10px'}}>
                 <img
                   src={image.imgSrc}
                   className="img-fluid w-100"
