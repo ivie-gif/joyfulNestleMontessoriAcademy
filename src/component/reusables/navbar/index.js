@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import LogoImage from "../../../assets/JNMALogo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -64,12 +65,12 @@ const Navbar = () => {
       <div className="wow fadeIn" data-wow-delay="0.1s">
         {/* Topbar - Always visible on mobile as well */}
         <div
-          className="topbar py-2 px-4 px-sm-5"
+          className="topbar py-2 px-4"
           style={{ borderRadius: "0 40px", backgroundColor: "#00f5f9" }}
         >
           <div className="top-info">
             {/* Address */}
-            <small className=" d-inline-flex flex-row flex-sm-row align-items-center border-dark px-2 w-lg-auto">
+            <small className=" d-inline-flex flex-row flex-sm-row align-items-center border-dark w-lg-auto">
               <i className="fas fa-map-marker-alt me-2 text-dark"></i>
               <p className="text-dark mb-0 w-sm-100">
                 Plot 2B, Ekpo Michael Street, VOERA Estate, Arepo - Lagos-Ibadan
@@ -101,15 +102,12 @@ const Navbar = () => {
         </div>
 
         {/* Navbar */}
-        <div className="container px-0">
+        <div className="px-2 py-3">
           <nav className="navbar navbar-light navbar-expand-xl">
             {/* Brand */}
-            <RouterLink to="/home" className="navbar-brand">
-              <h6>
-                JoyfulNestle Montessori <br />
-                <span>Academy</span>
-              </h6>
-            </RouterLink>
+            <div className="logo d-flex align-items-center me-auto me-xl-5 px-3" >
+            <img src={LogoImage} alt="School Logo" style={{maxHeight: '60px',}} />
+            </div>
 
             {/* Mobile Toggler */}
             <button
@@ -128,8 +126,8 @@ const Navbar = () => {
 
             {/* Navbar Items */}
             <div
-              className={`collapse navbar-collapse ${navbarOpen ? "show" : ""}`}
-              id="navbarCollapse"
+              className={`collapse text-uppercase fw-bold navbar-collapse ${navbarOpen ? "show" : ""}`}
+              id="navbarCollapse" 
               style={{
                 backgroundColor:
                   navbarOpen && isMobile ? "#FFFFFF" : "transparent",
@@ -177,15 +175,15 @@ const Navbar = () => {
                   Gallery
                 </NavLink>
                 <NavLink
-                  to="/testimonial"
-                  id="testimonial"
+                  to="/admissions"
+                  id="admissions"
                   smooth={true}
                   duration={100}
                   offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
-                  Testimonial
+                  Admissions
                 </NavLink>
                 <NavLink
                   to="/blog"

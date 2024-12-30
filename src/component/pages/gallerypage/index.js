@@ -55,7 +55,7 @@ const SchoolGallery = () => {
         <div className='text-center'>
             <Link
               to="/moregallery"
-              className="btn px-5 more-gallery-btn py-3 mt-5 btn-border-radius text-center text-uppercase"
+              className="btn px-5 fw-bold fs-6 more-gallery-btn py-3 mt-5 btn-border-radius text-center text-uppercase"
             >
               More Galleries
               </Link>

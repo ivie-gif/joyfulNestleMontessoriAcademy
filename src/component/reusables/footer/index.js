@@ -1,21 +1,26 @@
 import React from "react";
 import FooterGallery from "../../imagedata/footerGallery";
+import LogoImage from "../../../assets/JNMALogo.png";
+
 
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div className="container-fluid footer py-2 wow fadeIn" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">
             {/* Company Info */}
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="footer-item">
-              <a href="#" className="navbar-brand">
+              {/* <a href="#" className="navbar-brand">
             <h6 className=" fw-bold text-dark">
               JoyfulNestle Montessori <br />
               <span text-dark>Academy</span>
             </h6>
-          </a>
+          </a> */}
+           <div className="logo  align-items-center me-auto me-xl-0" >
+            <img src={LogoImage} alt="School Logo" style={{maxHeight: '100px',}} />
+            </div>
                 <p className="mb-4">
                 "Building Curiosity, Creativity, and Confidence". Our Montessori approach fosters exploration, self-expression, and a love for lifelong learning.
                 </p>
@@ -25,15 +30,10 @@ const Footer = () => {
             {/* Working Hours */}
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="footer-item">
-                <div
-                  className="d-flex flex-column text-dark"
-                  style={{ borderRadius: "50% 20% / 10% 40%"}}
-                >
                    <h4 className="mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{ borderBottom: '2px solid #000000'}}>
                    Contact Hours
                 </h4>
                   <p>Mondays to Fridays</p> <p>7:30am - 6pm</p>
-                </div>
               </div>
             </div>
 

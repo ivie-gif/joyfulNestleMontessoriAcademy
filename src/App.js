@@ -13,6 +13,7 @@ import Career from "./component/pages/careerpage";
 import SchoolGallery from "./component/pages/gallerypage";
 import Testimonial from "./component/pages/testimonials";
 import MoreSchoolImages from "./component/pages/moregallery";
+import Admissions from "./component/admissionspage";
 import Layout from "./component/layout";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/moregallery" element={<MoreSchoolImages />} />
+        <Route path="/admissions" element={<Admissions />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
       </Routes>
     // </Router>

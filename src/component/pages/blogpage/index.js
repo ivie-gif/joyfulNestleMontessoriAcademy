@@ -80,7 +80,7 @@ const BlogSection = () => {
                   </div>
                   <div className="text-center">
                      <Link to={`/blog/${post.slug}`}>
-                  <button className="btn px-4 py-2 mb-3 btn-border-radius text-uppercase" 
+                  <button className="btn px-4 py-2 mb-3 btn-border-radius text-uppercase fw-bold fs-6" 
                       style={{backgroundColor: '#fdc735', color: '#000000'}}>View Details</button>
                 </Link>
                   </div>

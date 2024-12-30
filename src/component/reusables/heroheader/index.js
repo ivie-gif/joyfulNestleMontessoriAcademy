@@ -4,7 +4,7 @@ import image2 from '../../../assets/moreGallery/6.jpeg';
 import image3 from '../../../assets/moreGallery/42.jpeg';
 import image4 from '../../../assets/moreGallery/27.jpeg';
 import image5 from '../../../assets/moreGallery/22.jpeg';
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 
 const HeroHeader = () => {
@@ -47,14 +47,14 @@ const HeroHeader = () => {
                   }}
                 >
                   <h1
-                    className="mb-3 pt-5 text-uppercase"
+                    className="mb-3 pt-5 display-6 fs-3 text-uppercase"
                     style={{
                       color: "#fdc735",
                       fontWeight: "100",
                       marginTop: "100px",
                     }}
                   >
-                    We Care For Your Child
+                    JoyfulNestle Montessori Academy Cares For Your Child
                   </h1>
                   <h1
                     className="mb-5 display-3 text-white"
@@ -63,13 +63,13 @@ const HeroHeader = () => {
                     A MONTESSORI PREPARED ENVIRONMENT
                   </h1>
                   <div >
-                    <RouterLink
-                      to=""
+                    <NavLink
+                      to="enrollment"
                       id='enrollment'
-                      className="btn get-started-btn text-uppercase px-4 py-3 px-md-5 me-4 btn-border-radius"
+                      className="btn fw-bold fs-5 get-started-btn text-uppercase px-4 py-3 px-md-5 me-4 btn-border-radius"
                     >
                       Get Started
-                    </RouterLink>
+                    </NavLink>
                   </div>
                 </div>
               </div>

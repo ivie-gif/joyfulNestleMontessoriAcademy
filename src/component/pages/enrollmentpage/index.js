@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../layout';
 import CustomDiv from '../../reusables/headerDetails';
+import { Link } from 'react-router-dom';
 
 const Enrollment = () => {
  // Assign specific colors based on index
@@ -96,12 +97,19 @@ const Enrollment = () => {
             </div>
           </div>
         </div>
+        
       </div>
     );
   })}
 </div>
 
       </div>
+      <div className="text-center">
+                     <Link to="/admissions">
+                  <button className="btn px-4 py-3 mb-4 btn-border-radius text-uppercase fw-bold fs-6" 
+                      style={{backgroundColor: '#fdc735', color: '#000000'}}>Admissions</button>
+                </Link>
+                  </div>
     </div>
     </>
   );
