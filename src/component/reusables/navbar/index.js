@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
 
         {/* Navbar */}
-        <div className="px-2 py-3">
+        <div className="py-3">
           <nav className="navbar navbar-light navbar-expand-xl">
             {/* Brand */}
             <div className="logo d-flex align-items-center me-auto me-xl-5 px-3" >
@@ -113,7 +113,7 @@ const Navbar = () => {
             <button
               className="navbar-toggler px-2"
               type="button"
-              onClick={handleNavbarToggle} // Toggle navbar open/close
+              onClick={handleNavbarToggle}
               aria-controls="navbarCollapse"
               aria-expanded={navbarOpen ? "true" : "false"}
               aria-label="Toggle navigation"
