@@ -1,9 +1,27 @@
 import React from 'react';
 import SchoolImages from '../../imagedata';
 import { Link } from 'react-router-dom';
+import Layout from '../../layout';
+import CustomDiv from '../../reusables/headerDetails';
+
 
 const SchoolGallery = () => {
   return (
+    <>
+      <CustomDiv
+        backgroundColor="#457992"
+        color="#FFFFFF"
+        minHeight="350px"
+        width="100%"
+        padding="20px"
+      >
+        <h3
+          className="mt-5 text-center text-uppercase display-4  "
+          style={{ paddingTop: "150px", borderBottom: "3px solid #FFFFFF" }}
+        >
+          Take a School Tour
+        </h3>
+      </CustomDiv>
     <div className="container-fluid schoolImages">
       <div className="container py-5">
         <div
@@ -11,9 +29,9 @@ const SchoolGallery = () => {
           data-wow-delay="0.1s"
           style={{ maxWidth: '600px' }}
         >
-          <h4 className="mb-4 d-inline-block p-2 title-border-radius"  style={{ borderBottom: '2px solid #000000'}}>
+          {/* <h4 className="mb-4 d-inline-block p-2 title-border-radius"  style={{ borderBottom: '2px solid #000000'}}>
             TAKE A SCHOOL TOUR
-          </h4>
+          </h4> */}
           <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase"> Some of the events from Awesome Summer camp 2017</h1>
         </div>
         <div className="row g-2 justify-content-center">
@@ -44,6 +62,7 @@ const SchoolGallery = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

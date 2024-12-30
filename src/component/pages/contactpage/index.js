@@ -1,24 +1,35 @@
 import React from 'react';
 import Layout from '../../layout';
+import CustomDiv from '../../reusables/headerDetails';
 
 const ContactUs = () => {
   return (
     <Layout>
-    <div className=" contact-page py-5" style={{  backgroundColor: '#fdc735' }}>
+        <CustomDiv
+        backgroundColor="#457992"
+        color="#FFFFFF"
+        minHeight="350px"
+        width="100%"
+        padding="20px"
+      >
+        <h3
+          className="mt-5 text-center text-uppercase display-4  "
+          style={{ paddingTop: "150px", borderBottom: "3px solid #FFFFFF" }}
+        >
+          Contact us
+        </h3>
+      </CustomDiv>
+    <div className=" contact-page bg-light">
       <div className="container py-5">
         <div className="p-5 rounded" >
           <div
             className="mx-auto text-center"
             style={{ maxWidth: '700px' }}
           >
-            <h4 className=" mb-4border-2 d-inline-block p-2 title-border-radius" style={{color: '#fdc735', borderBottom: '2px solid #fdc735'}}>
+            {/* <h4 className=" mb-4border-2 d-inline-block p-2 title-border-radius" style={{color: '#fdc735', borderBottom: '2px solid #fdc735'}}>
               Contact Us
-            </h4>
-            <h1 className="mb-4 display-6 fs-2" style={{color: '#fdc735'}}>Contact For Any Query</h1>
-            {/* <p className="mb-5">
-              The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.{' '}
-              <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-            </p> */}
+            </h4> */}
+            <h1 className="mb-4 display-6 fs-2 title-border-radius text-uppercase" style={{color: '#fdc735'}}>For Any Query</h1>
           </div>
           <div className="row g-3 mb-5">
             <div className="col-lg-4">

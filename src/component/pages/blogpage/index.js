@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import BlogPosts from '../../blogdata';
 import { Link } from 'react-router-dom';
+import Layout from '../../layout';
+import CustomDiv from '../../reusables/headerDetails';
 
 const BlogSection = () => {
   useEffect(() => {
@@ -8,16 +10,32 @@ const BlogSection = () => {
   }, []);
 
   return (
-    <div className="container-fluid blog py-5">
+    <>
+          <CustomDiv
+        backgroundColor="#457992"
+        color="#FFFFFF"
+        minHeight="350px"
+        width="100%"
+        padding="20px"
+      >
+        <h3
+          className="mt-5 text-center text-uppercase display-4  "
+          style={{ paddingTop: "150px", borderBottom: "3px solid #FFFFFF" }}
+        >
+          Latest News And Blogs
+        </h3>
+      </CustomDiv>
+    
+    <div className="container-fluid blog ">
       <div className="container py-5">
         <div
           className="mx-auto text-center wow fadeIn"
           data-wow-delay="0.1s"
           style={{ maxWidth: '600px' }}
         >
-          <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #000000'}}>
+          {/* <h4 className=" mb-4 d-inline-block p-2 title-border-radius text-dark text-uppercase" style={{borderBottom: '2px solid #000000'}}>
             Latest News And Blogs
-          </h4>
+          </h4> */}
           <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase" >Read Our Latest News And Blogs</h1>
         </div>
         <div className="row g-5 justify-content-center">
@@ -73,6 +91,7 @@ const BlogSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

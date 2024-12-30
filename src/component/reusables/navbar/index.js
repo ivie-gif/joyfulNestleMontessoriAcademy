@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink, Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -64,16 +64,16 @@ const Navbar = () => {
       <div className="wow fadeIn" data-wow-delay="0.1s">
         {/* Topbar - Always visible on mobile as well */}
         <div
-          className="topbar py-2 px-2"
+          className="topbar py-2 px-4 px-sm-5"
           style={{ borderRadius: "0 40px", backgroundColor: "#00f5f9" }}
         >
           <div className="top-info">
             {/* Address */}
-            <small className=" d-inline-flex flex-row flex-sm-row align-items-center border-end border-dark px-2 w-lg-auto">
+            <small className=" d-inline-flex flex-row flex-sm-row align-items-center border-dark px-2 w-lg-auto">
               <i className="fas fa-map-marker-alt me-2 text-dark"></i>
               <p className="text-dark mb-0 w-sm-100">
                 Plot 2B, Ekpo Michael Street, VOERA Estate, Arepo - Lagos-Ibadan
-                Expressway Ogun State Nigeria
+                Expressway Ogun State Nigeria.
               </p>
             </small>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
         <div className="container px-0">
           <nav className="navbar navbar-light navbar-expand-xl">
             {/* Brand */}
-            <RouterLink to="/" className="navbar-brand">
+            <RouterLink to="/home" className="navbar-brand">
               <h6>
                 JoyfulNestle Montessori <br />
                 <span>Academy</span>
@@ -143,70 +143,75 @@ const Navbar = () => {
                 >
                   Home
                 </RouterLink>
-                <ScrollLink
-                  to="About"
+                <NavLink
+                  to="/about"
+                  id="about"
                   smooth={true}
                   duration={100}
-                  offset={-80}
+                  offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   About
-                </ScrollLink>
-                <ScrollLink
-                  to="Enrollment"
+                </NavLink>
+                <NavLink
+                  to="/enrollment"
+                  id="enrollment"
                   smooth={true}
                   duration={100}
-                  offset={-80}
+                  offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Enrollment
-                </ScrollLink>
-                <ScrollLink
-                  to="SchoolGallery"
+                </NavLink>
+                <NavLink
+                  to="/gallery"
+                  id="gallery"
                   smooth={true}
                   duration={100}
-                  offset={-80}
+                  offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Gallery
-                </ScrollLink>
-                <ScrollLink
-                  to="Testimonial"
+                </NavLink>
+                <NavLink
+                  to="/testimonial"
+                  id="testimonial"
                   smooth={true}
                   duration={100}
-                  offset={-80}
+                  offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Testimonial
-                </ScrollLink>
-                <ScrollLink
-                  to="blog"
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  id="blog"
                   smooth={true}
                   duration={100}
-                  offset={-80}
+                  offset={-60}
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Blogs
-                </ScrollLink>
-                <RouterLink
+                </NavLink>
+                <NavLink
                   to="/career"
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Career
-                </RouterLink>
-                <RouterLink
+                </NavLink>
+                <NavLink
                   to="/contact"
                   className="nav-item nav-link"
                   onClick={closeNavbar}
                 >
                   Contact
-                </RouterLink>
+                </NavLink>
               </div>
 
               {/* Contact Info */}

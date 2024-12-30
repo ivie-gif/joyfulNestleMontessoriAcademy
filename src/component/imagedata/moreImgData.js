@@ -58,6 +58,7 @@ import image057 from '../../assets/moreGallery/57.jpeg';
 import image058 from '../../assets/moreGallery/58.jpeg';
 import image059 from '../../assets/moreGallery/59.jpeg';
 import image060 from '../../assets/moreGallery/60.jpeg';
+import image061 from '../../assets/moreGallery/61.jpeg';
 
 
  const MoreSchoolImages  = [
@@ -360,7 +361,12 @@ import image060 from '../../assets/moreGallery/60.jpeg';
       id: 60,
       imgSrc: image060,
       delay: '0.7s',
-    },0
+    },
+    {
+      id: 61,
+      imgSrc: image061,
+      delay: '0.7s',
+    },
   ];
 
   

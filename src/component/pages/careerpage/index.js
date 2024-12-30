@@ -1,24 +1,31 @@
 import React from "react";
 import Layout from "../../layout";
 import HeroHeader from "../../reusables/heroheader";
+import CustomDiv from "../../reusables/headerDetails";
 
 const ContactUs = () => {
   return (
    <Layout>
+      <CustomDiv
+        backgroundColor="#457992"
+        color="#FFFFFF"
+        minHeight="350px"
+        width="100%"
+        padding="20px"
+      >
+        <h3
+          className="mt-5 text-center text-uppercase display-4  "
+          style={{ paddingTop: "150px", borderBottom: "3px solid #FFFFFF" }}
+        >
+          Join Us
+        </h3>
+      </CustomDiv>
       <div
         className="container-fluid career-page py-5"
         style={{  backgroundColor: '#FFFFFF' }}
       >
-        <div className="container py-5">
-          <div className="p-5 rounded">
-            <div className="mx-auto text-center" style={{ maxWidth: "700px" }}>
-              <h4
-                className=" mb-4 border-2 d-inline-block p-2 title-border-radius text-dark"
-                style={{ borderBottom: "2px solid #000000" }}
-              >
-                Join Us
-              </h4>
-            </div>
+        <div className="container ">
+          <div>
             <p>
               At JoyfulNestle Montessori Academy we place high premium on the
               well being and learning development of our pupils, therefore we

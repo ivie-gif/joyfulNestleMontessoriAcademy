@@ -1,11 +1,26 @@
 import React from 'react';
 import Layout from '../../layout';
+import CustomDiv from '../../reusables/headerDetails';
 
 const Enrollment = () => {
  // Assign specific colors based on index
 
   return (
-    // <Layout>
+    <>
+     <CustomDiv
+        backgroundColor="#457992"
+        color="#FFFFFF"
+        minHeight="350px"
+        width="100%"
+        padding="20px"
+      >
+        <h3
+          className="mt-5 text-center text-uppercase display-4  "
+          style={{ paddingTop: "150px", borderBottom: "3px solid #FFFFFF" }}
+        >
+          Enrollment
+        </h3>
+      </CustomDiv>
     <div className="container-fluid enrollment">
       <div className="container py-5">
         <div
@@ -88,7 +103,7 @@ const Enrollment = () => {
 
       </div>
     </div>
-    // </Layout>
+    </>
   );
 };
 

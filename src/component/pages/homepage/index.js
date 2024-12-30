@@ -9,21 +9,21 @@ import Testimonial from "../testimonials";
 
 const HomePage = () => {
   return (
-    <Layout>
+    <Layout >
       <HeroHeader />
-      <section id="About">
+      <section id="about">
         <Aboutus />
       </section>
-      <section id="Enrollment">
+      <section id="enrollment">
         <Enrollment />
       </section>
-      <section id="SchoolGallery">
+      <section id="gallery">
         <SchoolGallery />
       </section>
-      <section id="Testimonial">
+      <section id="testimonial">
         <Testimonial />
       </section>
-      <section id="BlogSection">
+      <section id="blog">
         <BlogSection />
       </section>
     </Layout>

@@ -13,18 +13,22 @@ import Career from "./component/pages/careerpage";
 import SchoolGallery from "./component/pages/gallerypage";
 import Testimonial from "./component/pages/testimonials";
 import MoreSchoolImages from "./component/pages/moregallery";
+import Layout from "./component/layout";
 
 function App() {
   return (
     // <Router>
     // <ScrollToTop />
       <Routes>
+          {/* HomePage with internal sections */}
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<Aboutus />} />
-        <Route path="/enrollment" element={<Enrollment />} />
-        <Route path="/gallery" element={<SchoolGallery />} />
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/blog" element={<BlogSection />} />
+
+        {/* External Pages */}
+        <Route path="/about" element={<Layout><Aboutus /> </Layout>} />
+        <Route path="/enrollment" element={<Layout><Enrollment /> </Layout>} />
+        <Route path="/gallery" element={<Layout><SchoolGallery /></Layout>} />
+        <Route path="/testimonial" element={<Layout><Testimonial /> </Layout>} />
+        <Route path="/blog" element={<Layout><BlogSection /> </Layout>} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/moregallery" element={<MoreSchoolImages />} />
