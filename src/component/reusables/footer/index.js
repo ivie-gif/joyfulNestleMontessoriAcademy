@@ -6,13 +6,13 @@ import LogoImage from "../../../assets/JNMALogo.png";
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid footer py-2 wow fadeIn" data-wow-delay="0.1s">
+      <div className="container-fluid footer wow fadeIn" data-wow-delay="0.1s">
         <div className="container py-5">
           <div className="row g-5">
             {/* Company Info */}
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="footer-item">
-           <div className="logo  align-items-center me-auto me-xl-0" >
+           <div className="logo align-items-center me-auto me-xl-0" >
             <img src={LogoImage} alt="School Logo" style={{maxHeight: '100px',}} />
             </div>
                 <p className="mb-4">

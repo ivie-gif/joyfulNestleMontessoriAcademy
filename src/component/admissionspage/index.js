@@ -14,7 +14,7 @@ const Admissions = () => {
         {/* Iframe Section */}
         <div className="text-center">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfspM1DDJ40B3UKjLEP0doRr6O_HVKPBesZC1jXfi7ygNXx9A/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdyqrE46D2USXCSwCRi33SozB2txVTpWtBmhvfjlYiRrE-92A/viewform?embedded=true"
             width="100%"
             height="2000px"
             style={{

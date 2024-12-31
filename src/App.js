@@ -11,15 +11,14 @@ import Aboutus from "./component/pages/aboutus";
 import Enrollment from "./component/pages/enrollmentpage";
 import Career from "./component/pages/careerpage";
 import SchoolGallery from "./component/pages/gallerypage";
-import Testimonial from "./component/pages/testimonials";
+// import Testimonial from "./component/pages/testimonials";
 import MoreSchoolImages from "./component/pages/moregallery";
 import Admissions from "./component/admissionspage";
 import Layout from "./component/layout";
+import Page404 from "./component/pages/page404";
 
 function App() {
   return (
-    // <Router>
-    // <ScrollToTop />
       <Routes>
           {/* HomePage with internal sections */}
         <Route path="/" element={<HomePage />} />
@@ -28,15 +27,15 @@ function App() {
         <Route path="/about" element={<Layout><Aboutus /> </Layout>} />
         <Route path="/enrollment" element={<Layout><Enrollment /> </Layout>} />
         <Route path="/gallery" element={<Layout><SchoolGallery /></Layout>} />
-        <Route path="/testimonial" element={<Layout><Testimonial /> </Layout>} />
+        {/* <Route path="/testimonial" element={<Layout><Testimonial /> </Layout>} /> */}
         <Route path="/blog" element={<Layout><BlogSection /> </Layout>} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/moregallery" element={<MoreSchoolImages />} />
         <Route path="/admissions" element={<Admissions />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
-    // </Router>
   );
 }
 
