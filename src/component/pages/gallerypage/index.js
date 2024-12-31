@@ -1,7 +1,6 @@
 import React from 'react';
 import SchoolImages from '../../imagedata';
 import { Link } from 'react-router-dom';
-import Layout from '../../layout';
 import CustomDiv from '../../reusables/headerDetails';
 
 
@@ -29,9 +28,6 @@ const SchoolGallery = () => {
           data-wow-delay="0.1s"
           style={{ maxWidth: '600px' }}
         >
-          {/* <h4 className="mb-4 d-inline-block p-2 title-border-radius"  style={{ borderBottom: '2px solid #000000'}}>
-            TAKE A SCHOOL TOUR
-          </h4> */}
           <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase"> Some of the events from Awesome Summer camp 2017</h1>
         </div>
         <div className="row g-2 justify-content-center">

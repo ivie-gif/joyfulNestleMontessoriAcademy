@@ -4,7 +4,7 @@ import BlogPosts from "../../blogdata";
 import DOMPurify from "dompurify";
 
 const BlogDetail = () => {
-  const { slug } = useParams(); // Get the slug from the URL
+  const { slug } = useParams();
   const blogPost = BlogPosts.find((post) => post.slug === slug);
   const sanitizedHtml = DOMPurify.sanitize(blogPost.fullDescription);
 

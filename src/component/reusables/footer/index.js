@@ -12,12 +12,6 @@ const Footer = () => {
             {/* Company Info */}
             <div className="col-md-6 col-lg-4 col-xl-3">
               <div className="footer-item">
-              {/* <a href="#" className="navbar-brand">
-            <h6 className=" fw-bold text-dark">
-              JoyfulNestle Montessori <br />
-              <span text-dark>Academy</span>
-            </h6>
-          </a> */}
            <div className="logo  align-items-center me-auto me-xl-0" >
             <img src={LogoImage} alt="School Logo" style={{maxHeight: '100px',}} />
             </div>

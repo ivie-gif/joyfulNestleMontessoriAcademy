@@ -10,7 +10,7 @@ const Admissions = () => {
         minHeight: "100vh",
       }}
     >
-      <div className="container py-5" >
+      <div className="container py-5">
         {/* Iframe Section */}
         <div className="text-center">
           <iframe

@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../../layout";
-import HeroHeader from "../../reusables/heroheader";
 import CustomDiv from "../../reusables/headerDetails";
 
 const ContactUs = () => {
@@ -45,7 +44,6 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      {/* </HeroHeader> */}
     </Layout>
   );
 };

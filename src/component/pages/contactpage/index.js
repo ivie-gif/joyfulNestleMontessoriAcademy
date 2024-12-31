@@ -26,9 +26,6 @@ const ContactUs = () => {
             className="mx-auto text-center"
             style={{ maxWidth: '700px' }}
           >
-            {/* <h4 className=" mb-4border-2 d-inline-block p-2 title-border-radius" style={{color: '#fdc735', borderBottom: '2px solid #fdc735'}}>
-              Contact Us
-            </h4> */}
             <h1 className="mb-4 display-6 fs-2 title-border-radius text-uppercase" style={{color: '#fdc735'}}>For Any Query</h1>
           </div>
           <div className="row g-3 mb-5">
