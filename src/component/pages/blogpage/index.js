@@ -32,6 +32,12 @@ const BlogSection = () => {
             data-wow-delay="0.1s"
             style={{ maxWidth: "600px" }}
           >
+             <h4
+              className="mb-4 d-inline-block p-2 title-border-radius"
+              style={{ borderBottom: "2px solid #000000" }}
+            >
+              BLOGS
+            </h4>
             <h1 className=" mb-5 display-6 fs-4 text-dark text-uppercase">
               Read Our Latest News And Blogs
             </h1>
