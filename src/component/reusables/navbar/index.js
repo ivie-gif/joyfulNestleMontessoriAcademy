@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
 
         {/* Navbar */}
-        <div className="py-3">
+        <div>
           <nav className="navbar navbar-light navbar-expand-xl">
             {/* Brand */}
             <div className="logo d-flex align-items-center me-auto me-xl-5 px-3" >
